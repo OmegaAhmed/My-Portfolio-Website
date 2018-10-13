@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+                <!--Header Html (navbar & logo)-->
+    <header>
+        <div class="first_header">
+            <div class="logoimg">
+                <img src="img/udacity-logo.png" alt="udacity-logo" class="udlogo" />
+            </div>
+            <div class="TitleName">
+                <h1>Ahmed Qotb</h1>
+                <h4>Front-End Devloper</h4>  
+            </div>
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <nav id="drawer" class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">home</a></li>
+                <li class="nav__item"><a href="#Featured">Featured Work</a></li>
+                <li class="nav__item"><a href="#Message">Send Message</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+                    <!------------Banner ------------->
+        <section class="banner">
+            <div class="banner_title">
+                <h2>My Portfolio site</h2>
+            </div>
+        </section>
+                    <!-----------Featured Work ------------->
+        <section class="content container">
+                <h2>Featured Work</h2><a id="Featured"></a>
+                <div class="containercontent">
+                    <div class="box">
+                        <figure>
+                            <img src="img/library_website.jpg" alt="BUE_Library_Website"  class="box-img"/>
+                            <figcaption>Designed by Ahmed Qotb</figcaption>
+                        </figure>
+                        <h3>Library Website</h3>  
+                        <a href="http://lib.bue.edu.eg/">Visit Site</a>
+                    </div>
+                    <div class="box">
+                        <figure>
+                            <img src="img/subject-guides.jpg" alt="subject-guides"  class="box-img"/>
+                            <figcaption>Designed by Ahmed Qotb</figcaption>
+                        </figure>
+                        <h3>Subject Guide</h3>
+                        <a href="http://bue.libguides.com/home">Visit Site</a>
+                    </div> 
+                    <div class="box">
+                        <figure>
+                            <img src="img/news_letter.jpg" alt="Newsletter_image"  class="box-img"/>
+                            <figcaption>Designed by Ahmed Qotb</figcaption>
+                        </figure>
+                        <h3>Library Newsletter</h3>
+                        <a href="http://lib.bue.edu.eg/index.php/lsbue-libraries-connected-2/">Visit Site</a>
+                    </div>
+                </div>
+        </section>
+                   <!-----------About Me Description ------------->
+    <section class="summary container">
+            <h2>About Me</h2>
+            <article class="about_me">
+                <h3>Ahmed Qotb</h3>
+                <p>
+                    <i class="fas fa-thumbtack"></i> Belbies, Asharqia, Egypt<br>
+                    <i class="fas fa-mobile-alt"></i> +201094299965<br>
+                    <i class="fas fa-at"></i> Ahmedkotb095@gmail.com
+                </p>
+                <div class="brief">
+                    <h3>Brief</h3>
+                    <p>I'm a Front-End designer with experience that  providing tailored career counseling, coaching, and job seeker services. Work well with clients from all walks of life to identify values, develop possible career paths, and design effective job search strategies. 90% successful employment placement rate. Good with database programs, HTML, CSS, Javascript, Jquery, Bootstrap, Content Managemant Systems. </p>
+                </div>    
+            </article>
+    </section>      
+    </main>
+                    <!-----------Footer ------------->
+    <footer>
+                <div class="first_footer">
+                    <div class="form_detail"><a id="Message"></a>
+                            <fieldset>
+                                <legend> <h2>For Any Question:</h2></legend>
+                                <form class="complain" action="mailto:ahmedkotb095@gmail.com" method="POST">
+                                <input type="text" name="Name" placeholder="Your Name" >
+                                <input type="email" name="Email" placeholder="Your Email" >
+                                <textarea rows="3" placeholder="Insert your message"></textarea>
+                                <button type="submit">Submit</button>
+                                </form>
+                            </fieldset>
+                        </div>
+                        <div class="social_media">
+                            <a href="https://www.facebook.com/ahmed.elsayed.3152130" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-kotb-70663163/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                </div>        
+                        <!-----------Footer copyright ------------->
+                        <div class="copyright">
+                             <p>&copy; 2018 Ahmed Qotb</p>
+                        </div>
+    </footer>
+    <script>
+        /*
+         * Open the drawer when the menu ison is clicked.
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+  
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+          drawer.classList.remove('open');
+        });
+  
+      </script>
+</body>
+</html>
